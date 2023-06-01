@@ -160,3 +160,33 @@ Now register our 'BooksEffect' with 'EffectsModule' in 'books.module.ts'.
 })
 export class BooksModule { }
 ```
+
+### Task: Create A Service(Ex: BooksService) File
+
+1. `ng generate service books/books`
+
+```TypeSCript
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class BooksService {
+
+  constructor(private http: HttpClient) { }
+}
+```
+
+Now register 'HttpClientModule' in 'AppModule'.
+
+```typeScript
+// existing code hidden for display purpose
+import {  HttpClientModule } from '@angular/common/http';
+ 
+@NgModule({,
+  imports: [
+    HttpClientModule
+  ]
+})
+```
