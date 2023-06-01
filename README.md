@@ -23,3 +23,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
           },
 ...
 ```
+
+### Task: Add NabBar component in app.component.htnl
+
+```html
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </div>
+</nav>
+```
+
+### TAsk: Setup JSON Server
