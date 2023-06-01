@@ -83,3 +83,9 @@ const routes: Routes = [
 ];
 ...
 ````
+
+### Task: Install NgRx Packages
+
+1. `ng add @ngrx/store`
+2. `ng add @ngrx/effects`
+3. `ng add @ngrx/store-devtools`
