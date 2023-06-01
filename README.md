@@ -50,3 +50,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. Now Run: `npm run json-run`
 2. We now have a database on file: db.json
+3. Now access the API endpoint like '<http://localhost:3000/books>'. Good to go!
+
+### Task: Create An Angular Feature Module(Ex: Books Module) And A Component(Ex: Home Component)
+
+1. `ng generate module books --routing`
+2. `ng generate component books/home`
