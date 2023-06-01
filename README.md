@@ -34,4 +34,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 </nav>
 ```
 
-### TAsk: Setup JSON Server
+### Task: Setup JSON Server
+
+1. `npm install -g json-server`
+
+```json
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "json-run": "json-server --watch db.json" <=
+```
+
+1. Now Run: `npm run json-run`
+2. We now have a database on file: db.json
