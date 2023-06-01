@@ -132,3 +132,8 @@ import { bookReducer } from './store/books.reducer';
 })
 export class BooksModule { }
 ```
+
+### Task: Add Action
+
+1. `ng generate class books/store/books.action`
+2. The 'Actions' represents the events raised by the component to communicate either with reducers or effects to update the data to store. Let's create a 'Books' action.
