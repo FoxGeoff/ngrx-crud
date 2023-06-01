@@ -93,8 +93,8 @@ const routes: Routes = [
 ### Task: Create A Feature Store(Ex: Books Module State Management Store)
 
 ```typescript
-// books/store/books.ts
-export interface Books {
+// books/store/book.ts
+export interface Book {
   id: number;
   name: string;
   author: string;
@@ -102,4 +102,8 @@ export interface Books {
 }
 ```
 
-Reducer is a pure function, that gets invoked by the actions and then generates a new state in the store based on the action. Let's create a 'Books' reducer. 
+### Task: Add Reducer
+
+Reducer is a pure function, that gets invoked by the actions and then generates a new state in the store based on the action. Let's create a 'Books' reducer.
+
+1. `ng generate class books/store/books.reducer`
