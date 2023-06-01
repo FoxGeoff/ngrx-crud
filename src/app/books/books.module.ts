@@ -17,5 +17,6 @@ import { BooksEffect } from './store/books.effect';
     BooksRoutingModule,
     StoreModule.forFeature('mybooks', bookReducer),
     EffectsModule.forFeature([BooksEffect])
+  ],
 })
 export class BooksModule { }
