@@ -82,10 +82,24 @@ const routes: Routes = [
   },
 ];
 ...
-````
+```
 
 ### Task: Install NgRx Packages
 
 1. `ng add @ngrx/store`
 2. `ng add @ngrx/effects`
 3. `ng add @ngrx/store-devtools`
+
+### Task: Create A Feature Store(Ex: Books Module State Management Store)
+
+```typescript
+// books/store/books.ts
+export interface Books {
+  id: number;
+  name: string;
+  author: string;
+  cost: number;
+}
+```
+
+Reducer is a pure function, that gets invoked by the actions and then generates a new state in the store based on the action. Let's create a 'Books' reducer. 
