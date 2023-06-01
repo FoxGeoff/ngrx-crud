@@ -56,3 +56,30 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. `ng generate module books --routing`
 2. `ng generate component books/home`
+
+### Task: use the lazy loading technique for the modules
+
+```typescript
+// app-routing.module.ts
+...
+const routes: Routes = [
+  {
+    path: '',
+    loadChildren: () =>
+      import('./books/books.module').then((b) => b.BooksModule),
+  },
+];
+...
+```
+
+```typescript
+// book-routing.module.ts
+...
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
+];
+...
+````
