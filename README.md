@@ -137,3 +137,26 @@ export class BooksModule { }
 
 1. `ng generate class books/store/books.action`
 2. The 'Actions' represents the events raised by the component to communicate either with reducers or effects to update the data to store. Let's create a 'Books' action.
+
+### Task: Add Effect
+
+1. The 'Effects' are used to invoke the API calls. Let's create a 'Books' effect.
+2. `ng generate class books/store/books.effect`
+3. The 'BooksEffect' class is just an injectable service. In the next steps, we write actions and trigger effects to invoke the API calls in this service.
+
+Now register our 'BooksEffect' with 'EffectsModule' in 'books.module.ts'.
+
+```typescript
+...
+@NgModule({
+  declarations: [
+    HomeComponent
+  ],
+  imports: [
+    CommonModule,
+    BooksRoutingModule,
+    StoreModule.forFeature('mybooks', bookReducer),
+    EffectsModule.forFeature([BooksEffect])
+})
+export class BooksModule { }
+```

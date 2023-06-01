@@ -1,4 +1,4 @@
-export class Books.Action {
+export class BooksAction {
 }
 
 /**
